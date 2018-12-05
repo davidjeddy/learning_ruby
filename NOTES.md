@@ -58,4 +58,19 @@
 
   - if a = f(x) and b = f(y) and c = f(z) then d = g(a,b,c) end
 
--  
+## Strings
+
+- String literals are sequences of characters between single or double quotation marks.  
+
+- If puts is passed an object that is not a string, puts calls the to_s method of that object and prints the string returned by that method.
+
+- In Ruby, strings are mutable. They can expand as needed, without using much time and memory. Ruby stores a string as a sequence of characters.
+
+- Using the Grave accent (`) the contents of the string are treated as a command output string. It is sent to the operating system as a command to be executed 
+
+## Variables
+
+- local variable references look just like method invocation expressions
+
+
+
