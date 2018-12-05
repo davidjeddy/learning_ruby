@@ -72,5 +72,36 @@
 
 - local variable references look just like method invocation expressions
 
+## Scope
+
+- Scope refers to the reach or visibility of variables. Different types of variables have different scoping rules.
+
+### Global SCope:
+
+  - used least often
+
+  - accessible via the entire program
+
+  - distinguished by starting with a dollar-sign ($) character
+
+  - used very little
+
+  - Ruby interpreter starts up with a fairly large number of global variables already initialized
+
+    - the global variable $0 contains the name of the file Ruby is executing
+
+    - The global $: (dollar sign followed by a colon) contains the directories that make up the path Ruby searches when you load an external file
+
+    - $$ contains the process id of the Ruby process. 
+
+### Local scope
+
+- The top level (outside of all definition blocks) has its own local scope.
+
+- Every class or module definition block (class, module) has its own local scope, even nested class/module definition blocks.
+
+- Every method definition (def) has its own local scope.
+
+# Input
 
 
