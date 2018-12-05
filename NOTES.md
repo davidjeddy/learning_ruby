@@ -24,6 +24,13 @@
 
 - The Ruby coding convention states that file/directory name is lower case of class/module name with .rb extension. For example, Foo class has name foo.rb
 
+- The Ruby convention is to use underscores to separate words in a multiword method or variable name.
+
+- By convention, most constants are written in all uppercase with underscores to separate words, LIKE_THIS. 
+
+- Ruby class and module names are also constants, but they are conventionally written using initial capital letters and camel case, LikeThis.
+
+
 ## Features
 
 - Free format - You can start writing your program from any line and column.
@@ -72,6 +79,20 @@
 
 - local variable references look just like method invocation expressions
 
+- Variables in Ruby can contain data of any type. You can use variables in your Ruby programs without any declarations.
+
+- Variable names denotes its scope (local, global, instance, etc.).
+
+  - A local variable (declared within an object) name consists of a lowercase letter (or an underscore) followed by name characters (sunil, _z, hit_and_run).
+
+  - An instance variable (declared within an object always "belongs to" whatever object self refers to) name starts with an ''at'' sign (''@'') followed by a name (@sign, @_, @Counter).
+
+  - A class variable (declared within a class) name starts with two ''at'' signs (''@@'') followed by a name (@@sign, @@_, @@Counter). A class variable is shared among all objects of a class. Only one copy of a particular class variable exists for a given class. Class variables used at the top level are defined in Object and behave like global variables. Class variables are rarely used in Ruby programs.
+
+  - Global variables start with a dollar sign (''$'') followed by name characters. A global variable name can be formed using ''$-'' followed by any single character ($counter, $COUNTER, $-x). Ruby defines a number of global variables that include other punctuation characters, such as $_ and $-K.
+
+  -  variables in Ruby act as "references" to objects, which undergo automatic garbage collection.
+
 ## Scope
 
 - Scope refers to the reach or visibility of variables. Different types of variables have different scoping rules.
@@ -102,6 +123,57 @@
 
 - Every method definition (def) has its own local scope.
 
-# Input
+## Input
+
+- TDOUT is a global constant which is the actual standard output stream for the program.
+
+- flush flushes any buffered data within io to the underlying operating system (note that this is Ruby internal buffering only; the OS may buffer the data as well).
+
+- STDOUT.sync = true will allow you to have flushed Ruby based IO without repeated .flush calls.
+
+- chomp is a string method and gets retrieves only strings from your keyboard. You must have realised that gets returns a string and a '\n' character, while chomp removes this '\n'.
+
+## Names
+
+- Ruby Names are used to refer to constants, variables, methods, classes, and modules.
+
+### Variables
+
+- (See Variable section above.)
+
+### Constants
+
+- A constant name starts with an uppercase letter followed by name characters. Examples: module MyMath, PI=3.1416, class MyPune.
+
+- Class names and module names are constants and follow the constants naming schema
+
+- A Ruby constant is also a reference to an object.
+
+### Method Names
+
+- Method names should begin with a lowercase letter (or an underscore). "?", "!" and "=" are the only weird characters allowed as method name suffixes (! or bang labels a method as dangerous-specifically, as the dangerous equivalent of a method with the same name but without the bang.)
+
+### Basic Types
+
+- The basic types in Ruby are Numeric (subtypes include Fixnum, Integer, and Float), String, Array, Hash, Object, Symbol, Range, and RegExp.
+
+-  Ruby, everything you manipulate is an object, and the results of those manipulations are themselves objects. There are no primitives or data-types.
 
 
+### Methods
+
+- Every method needs an object.
+
+- We do not declare the return type; a method returns the value of the last statement executed in the method.
+
+- It is recommended that you leave a single blank line between each method definition.
+
+- The parentheses around a method's arguments are optional; our convention is to use them when a method has arguments and omit them when it doesn't. (In Rails, you will see methods calls with no parentheses.)
+
+- Please note that as of now, there is no way, to specify a value for the second parameter and use the default value of the first parameter.
+
+- Interpolation refers to the process of inserting the result of an expression into a string literal.
+
+- When a method is aliased, the new name refers to a copy of the original method's body. If the method is subsequently redefined, the aliased name will still invoke the original implementation.
+
+http://rubylearning.com/satishtalim/writing_own_ruby_methods.html
