@@ -176,4 +176,32 @@
 
 - When a method is aliased, the new name refers to a copy of the original method's body. If the method is subsequently redefined, the aliased name will still invoke the original implementation.
 
-http://rubylearning.com/satishtalim/writing_own_ruby_methods.html
+- The asterisk (called the splat argument) is actually taking all arguments you send to the method and assigning them to an array
+
+- There's no limit to the number of parameters.
+
+-  the sequence in which the parameters are put on to the stack is Left to right like C
+
+- Are the parameters passed by value or reference? it is all references and not the objects themselves.
+
+### Bang (!) Methods
+
+- Ruby methods that modify an object in-place and end in an exclamation mark are known as bang methods.
+
+- You'll find a number of pairs of methods, one with the bang and one without.
+
+  -  Those without the bang perform an action and return a freshly minted object
+
+  -  The bang versions of the same methods perform the action, but they do so in place: Instead of creating a new object, they transform the original object.
+
+  - Examples of such pairs of methods include sort/sort! for arrays, upcase/upcase! for strings, chomp/chomp! for strings, and reverse/reverse!
+
+- Normally for the built-in classes, dangerous usually (although not always) means this method, unlike its non-bang equivalent, permanently modifies its receiver.
+
+- A few non-bang methods perform changes on the original string. The names of these methods make it clear that this is happening (such as replace), even though there's no ! on the name.
+
+### Method names ending with ?
+
+- The question mark has no special meaning to the Ruby interpreter. However, by convention, any method whose name ends with ? returns a value that answers the question posed by the method invocation. Exp: empty? method of an array, for example, returns true if the array has no elements.
+
+- Mostly such methods return one of the Boolean values true or false, but this is not required
