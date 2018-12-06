@@ -205,3 +205,42 @@
 - The question mark has no special meaning to the Ruby interpreter. However, by convention, any method whose name ends with ? returns a value that answers the question posed by the method invocation. Exp: empty? method of an array, for example, returns true if the array has no elements.
 
 - Mostly such methods return one of the Boolean values true or false, but this is not required
+
+## ri (Ruby Index) and RDoc (Ruby Documentation)
+
+- closely related pair of tools for providing documentation about Ruby programs
+
+- ri --help
+
+- rdoc --help
+
+- rdoc reads comments and creates documentation from them
+
+  - You can see RDoc markup in many of the C files in the Ruby source tree and many of the Ruby files in the Ruby installation.
+
+- The Ruby ri tool is used to view the Ruby documentation off-line.
+
+  -  Open a command window and invoke ri followed by the name of a Ruby class, module or method.
+
+  -  ri will display documentation for you.
+
+  - You may specify a method name without a qualifying class or module name, but this will just show you a list of all methods by that name (unless the method is unique).
+
+- ri dovetails with RDoc: It gives you a way to view the information that RDoc has extracted and organized.
+
+## More on Strings
+
+- Single quote String literals are evaluated minimally. Escape characters work but that is about it
+
+- Double quite String literals: substitutions, sequences that start with a backslash, and replace with some binary value. Followed by expression interpoilation. 
+
+- It is to be noted that every time a string literal is used in an assignment or as a parameter, a new String object is created.
+
+
+- String.methods.sort = shows you a list of methods that the Class object String responds to.
+
+- String.instance_methods.sort = This method tells you all the instance methods that instances of String are endowed with.
+
+- String.instance_methods(false).sort = With this method, you can view a class's instance methods without those of the class's ancestors.
+
+
