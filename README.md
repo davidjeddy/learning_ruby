@@ -9,5 +9,3 @@
 - [http://rubylearning.com/](http://rubylearning.com/)
 
 - [http://ruby-doc.org/](http://ruby-doc.org/)
-
--
