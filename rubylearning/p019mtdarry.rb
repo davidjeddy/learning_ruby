@@ -1,0 +1,26 @@
+# p019mtdarry.rb  
+# if you give return multiple parameters,  
+# the method returns them in an array  
+# The times method of the Integer class iterates block num times,  
+# passing in values from zero to num-1  
+  
+def mtdarry  
+  10.times do |num|  
+    square = num * num  
+    return num, square if num > 5  
+  end  
+end  
+  
+# using parallel assignment to collect the return value  
+num, square = mtdarry  
+puts num  
+puts square  
+
+
+
+puts ENV.each {|k,v| puts "#{k}: #{v}"}  
+
+
+
+ENV["course"] = "FORPC101"  
+puts "#{ENV['course']}"  

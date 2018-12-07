@@ -243,4 +243,94 @@
 
 - String.instance_methods(false).sort = With this method, you can view a class's instance methods without those of the class's ancestors.
 
+- Ruby siupports character encodings.
 
+## Simple Constructs
+
+- By the Ruby convention, if and while do not require parenthesis.
+
+- Some common conditional operators are: ==, != >=, <=, >, <
+
+- unless, as a statement or a modifier, is the opposite of if.
+
+- As a concise alternative to simple if/else statements we can use the conditional or ternary ?: operator.
+
+  - "(condition) ? (result if condition is true) : (result if condition is false)"
+
+- statement modifiers are a useful shortcut if the body of an if or unless statement is just a single expression. 
+
+  - "puts "Enrollments will now Stop" if participants > 2500"
+
+- case returns the value of the last expression executed.
+
+- nil is an Object
+
+   - You can call methods on nil, just like any other object.
+
+   - You can add methods to nil, just like any other object.
+
+   -  nil and false evaluate to false, everything else (including true, 0) means true.
+
+## Ruby Code Blocks
+
+- called closures in other languages
+
+- chunks of code between braces or between do..end that you can associate with method invocations
+
+- and may appear only in the source adjacent to a method call
+
+- the block is written starting on the same line as the method call's last parameter (or the closing parenthesis of the parameter list)
+
+- The Ruby standard is to use braces for single-line blocks and do..end for multi-line blocks
+
+  - braces syntax has a higher precedence than the do..end
+
+  - 
+- the block is written starting on the same line as the method call's last parameter (or the closing parenthesis of the parameter list)
+
+- The Ruby standard is to use braces for single-line blocks and do..end for multi-line blocks
+
+  - braces syntax has a higher precedence than the do..end, Braces have a high precedence; do has a low precedence
+
+- blocks can have their own arguments
+
+- you can associate it with a call to a method
+
+- If no code block is passed and yield is called, Ruby raises an exception
+
+- From Ruby 1.9 on-wards, blocks introduced their own scope for the block parameters only.
+
+#@ Arrays
+
+- An Array is just a list of items in order
+
+- Every slot in the list acts like a variable, ... and you can make it point to a different object.
+
+- You can make an array by using square brackets
+
+- Negative index values count from the end of the array
+
+- If you attempt to read an element beyond ...  returns nil and does not throw an exception
+
+- arrays are mutable - arrays are dynamically resizable; you can append elements to them and they grow as needed
+
+- As of Ruby 1.9, setting an environment variable's value to nil removes the variable from the environment.
+
+- ARGTV array: append parameters onto the end of the command
+
+- Class GetoptLong supports command-line option parsing:
+
+  - Options may be a minus sign (-) followed by a single character, or two minus signs (--) followed by a name (a long option).
+
+  - Options may be given in any order.
+
+  - Each internal option is passed to GetoptLong as an array,
+
+
+
+
+## Dependency Management
+
+- require gives you access to the many extensions and programming libraries bundled with the Ruby programming language-as well as an even larger number of extensions and libraries written independently by other programmers and made available for use with Ruby.
+
+http://rubylearning.com/satishtalim/ruby_ranges.html
