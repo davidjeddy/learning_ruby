@@ -30,6 +30,7 @@
 
 - Ruby class and module names are also constants, but they are conventionally written using initial capital letters and camel case, LikeThis.
 
+- The use of an else clause is not particularly common in Ruby.
 
 ## Features
 
@@ -97,7 +98,7 @@
 
 - Scope refers to the reach or visibility of variables. Different types of variables have different scoping rules.
 
-### Global SCope:
+### Global Scope:
 
   - used least often
 
@@ -580,7 +581,6 @@ In writing about Ruby, the pound notation (#) is sometimes used to indicate an i
 
   - but are used like language keywords
 
-
 - The load method includes the named Ruby source file every time the method is executed: load 'filename.rb' 
 
 - The more commonly used require method loads any given file only once: require 'filename'  
@@ -588,6 +588,66 @@ In writing about Ruby, the pound notation (#) is sometimes used to indicate an i
 - Note that you say require 'filename', not require 'filename.rb'.
 
 - require_relative for when the file loading is relative to the file we're loading it from - they're both in the same directory.
+
+## Exceptions
+
+- Exceptin class/s indicates that something has gone wrong.
+
+- By default, Ruby programs terminate when an exception occurs.
+
+- can define declare exception handlers
+
+- Raising an exception means stopping normal execution
+
+- provided a rescue clause for exception handling
+
+- By default, raise creates an exception of the RuntimeError class
+
+- To raise an exception of a specific class, you can pass in the class name as an argument to raise
+
+- To be even more specific about an error, you can define your own Exception subclass
+
+- To do exception handling, we enclose the code that could raise an exception in a begin-end
+
+- use one or more rescue clauses to tell Ruby the types of exceptions we want to handle
+
+- body of a method definition is an implicit begin-end block
+
+- a rescue clause with no parameter list, the parameter defaults to StandardError
+
+- Each rescue clause can specify multiple exceptions to catch
+
+- Exceptions not handled by one rescue clause will trickle down to the next
+
+- The message method returns a string that may provide human-readable details about what went wrong
+
+- The other important method is backtrace. This method returns an array of strings that represent the call stack at the point that the exception was raised.
+
+- If you need the guarantee that some processing is done at the end of a block of code then the ensure clause can be used
+
+- ensure goes after the last rescue clause and contains a chunk of code that will always be executed; The ensure block will always run.
+
+- DO NOT "puts e.backtrace.inspect" unless directly into a non-public log.
+
+## Logging
+
+- The Logger class in the Ruby standard library
+
+- file or stream
+
+- supports time- or size-based rolling of log files
+
+- Messages can be assigned severities, and only those messages at or above the logger's current reporting level will be logged.
+
+- At runtime, you can get a more or a less verbose log by changing the log level
+
+- production application usually has a log level of Logger::INFO or Logger::WARN
+
+- From least to most severe: Logger.debug, Logger.info, Logger.warn, Logger.error, and Logger.fatal.
+
+- If your log is being stored in a file, you can have Logger rotate or replace the log file when it gets too big, or once a certain amount of time has elapsed.
+
+- To change logging level: "$LOG.level = Logger::ERROR"
 
 ## Dependency Management
 
