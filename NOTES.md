@@ -724,7 +724,27 @@ you're allowed to do this:
 
 - can't serialize Ruby code (like Proc objects) nor file handles or database connections
 
-- 
+## Modules / Mix-ins
+
+- Modules are similar to classes in that they hold a collection of methods, constants, and other module and class definitions
+
+- Modules are defined with the module keyword
+
+- Unlike classes, you cannot create objects based on modules nor can you subclass them
+
+- functionality of a particular module to be added to the functionality of a class, or of a specific object
+
+- there is no "module hierarchy" of inheritance
+
+- Modules is a good place to collect all your constants in a central location.
+
+- they allow you to share functionality between classe
+
+- emember that you can mix in more than one module in a class
+
+- a class cannot inherit from more than one class
+
+- Class names tend to be nouns, while module names are often adjectives.
 
 ## Dependency Management
 
