@@ -460,13 +460,47 @@ In writing about Ruby, the pound notation (#) is sometimes used to indicate an i
 
 - Add methods that conceptually belong to a class, in the class. If the methods is generally useful, make a sub-class. Finally, one off or no-often used logic cna be closures or lambdas.
 
-## Missing Methods
+- Inheritance is a relation between two classes
 
-- "def method_missing(m, \*args, &block)"
+- a class can only inherit from a single other class (no multiple inheritance)
 
-- You are also responsible for maintaining the method_missing signature.
+- child classes can override parent class methods
+
+- Inheritance allows you to create a class that is a refinement or specialization of another class
+
+- indicated with "<" symbol
+
+- single line inheritancy
+
+- Some built-in classes are Array, Bignum, Class, Dir, Exception, File, Fixnum, Float, Integer, IO, Module, Numeric, Object, Range, String, Thread, Time. Some built-in modules are Comparable, Enumerable, GC, Kernel, Math.
+
+- The BasicObject class is the parent class of all classes in Ruby
+
+- initialize() is an ordinary method and is inherited like any other.
+
+- instance variables are not defined by a class, they are unrelated to subclassing and the inheritance mechanism.
+
+  - The reason that they sometimes appear to be inherited is that instance variables are created by the methods that first assign values to them, and those methods are often inherited or chained.
+
+  - **Since instance variables have nothing to do with inheritance, it follows that an instance variable used by a subclass cannot "shadow" an instance variable in the super-class. If a subclass uses an instance variable with the same name as a variable used by one of its ancestors, it will overwrite the value of its ancestor's variable.**
+
+## Method Overriding
+
+- When you invoke super with no arguments Ruby sends a message to the parent of the current object, asking it to invoke a method of the same name
+
+- Called with an empty argument list sends no arguments to the higher-up method
+
+- Called with specific arguments - "super(a, b, c)" - it sends exactly those arguments.
+
+## Redefine Method
+
+- Nothing stops you from defining a method twice.
+
+## Missing Mthod/s
 
 - Is it possible to have a hook that captures only a missing method's name while ignoring its arguments and associated block.
+
+- the new (closest to the bottom of a class) version takes precedence.
 
 ## Ruby Procs
 
