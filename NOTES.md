@@ -483,6 +483,23 @@ In writing about Ruby, the pound notation (#) is sometimes used to indicate an i
 
 - Ruby uses a conservative mark-and-sweep GC mechanism
 
+## File Mgmnt
+
+- require and load methods
+
+  - both are global functions defined in Object
+
+  - but are used like language keywords
+
+
+- The load method includes the named Ruby source file every time the method is executed: load 'filename.rb' 
+
+- The more commonly used require method loads any given file only once: require 'filename'  
+
+- Note that you say require 'filename', not require 'filename.rb'.
+
+- require_relative for when the file loading is relative to the file we're loading it from - they're both in the same directory.
+
 ## Dependency Management
 
 - require gives you access to the many extensions and programming libraries bundled with the Ruby programming language-as well as an even larger number of extensions and libraries written independently by other programmers and made available for use with Ruby.
