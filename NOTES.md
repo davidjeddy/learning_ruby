@@ -649,6 +649,18 @@ In writing about Ruby, the pound notation (#) is sometimes used to indicate an i
 
 - To change logging level: "$LOG.level = Logger::ERROR"
 
+## Time class
+
+- Time class in Ruby has a powerful formatting function
+
+- The Time class contains Ruby's interface to the set of time libraries written in C
+
+- Ruby's DateTime class is superior to Time for astronomical and historical applications
+
+- Time for most everyday programs.
+
+
+
 ## Dependency Management
 
 - require gives you access to the many extensions and programming libraries bundled with the Ruby programming language-as well as an even larger number of extensions and libraries written independently by other programmers and made available for use with Ruby.
