@@ -144,11 +144,23 @@
 
 ### Constants
 
-- A constant name starts with an uppercase letter followed by name characters. Examples: module MyMath, PI=3.1416, class MyPune.
-
 - Class names and module names are constants and follow the constants naming schema
 
 - A Ruby constant is also a reference to an obect.
+
+- constant is like a variable, except that its value is supposed to remain constant for the duration of the program
+
+- most constants are written in all uppercase with underscores to separate words, LIKE_THIS
+
+- Constants defined within a class or module may be accessed anywhere within the class or module.
+
+  - Outside the class or module, they may be accessed using the scope operator, :: prefixed by an expression that returns the appropriate class or module.
+
+  - Constants defined outside any class or module may be accessed as it is or by using the scope operator with no prefix.
+
+  - Constants may not be defined in methods.
+
+  - Constants may be added to existing classes and modules from the outside by using the class or module name and the scope operator before the constant name.
 
 ### Method Names
 
