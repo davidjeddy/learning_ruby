@@ -8,15 +8,15 @@
 
 - Parentheses are usually optional with a method call
 
-- In Ruby, everything from an integer to a string is considered to be an object
+- In Ruby, everything from an integer to a string is considered to be an obect
 
-- each object has built in 'methods' 
+- each obect has built in 'methods' 
 
 - Ruby is dot notation
 
 - Some methods such as puts and gets are available everywhere
 
-- Java and C programmers - no need to write a main method/function
+- ava and C programmers - no need to write a main method/function
 
 - String literals are sequences of characters between single or double quotation marks.
 
@@ -57,7 +57,7 @@
 
 - [http://rubylearning.com/images/class.png](http://rubylearning.com/images/class.png)
 
-- [http://rubylearning.com/images/operators.jpg](http://rubylearning.com/images/operators.jpg)
+- [http://rubylearning.com/images/operators.pg](http://rubylearning.com/images/operators.pg)
 
 - The sign of the result (for % operator) is always the same as the sign of the second operand.
 
@@ -69,7 +69,7 @@
 
 - String literals are sequences of characters between single or double quotation marks.  
 
-- If puts is passed an object that is not a string, puts calls the to_s method of that object and prints the string returned by that method.
+- If puts is passed an obect that is not a string, puts calls the to_s method of that obect and prints the string returned by that method.
 
 - In Ruby, strings are mutable. They can expand as needed, without using much time and memory. Ruby stores a string as a sequence of characters.
 
@@ -77,21 +77,21 @@
 
 ## Variables
 
-- local variable references look just like method invocation expressions
+- local variable references look ust like method invocation expressions
 
 - Variables in Ruby can contain data of any type. You can use variables in your Ruby programs without any declarations.
 
 - Variable names denotes its scope (local, global, instance, etc.).
 
-  - A local variable (declared within an object) name consists of a lowercase letter (or an underscore) followed by name characters (sunil, _z, hit_and_run).
+  - A local variable (declared within an obect) name consists of a lowercase letter (or an underscore) followed by name characters (sunil, _z, hit_and_run).
 
-  - An instance variable (declared within an object always "belongs to" whatever object self refers to) name starts with an ''at'' sign (''@'') followed by a name (@sign, @_, @Counter).
+  - An instance variable (declared within an obect always "belongs to" whatever obect self refers to) name starts with an ''at'' sign (''@'') followed by a name (@sign, @_, @Counter).
 
-  - A class variable (declared within a class) name starts with two ''at'' signs (''@@'') followed by a name (@@sign, @@_, @@Counter). A class variable is shared among all objects of a class. Only one copy of a particular class variable exists for a given class. Class variables used at the top level are defined in Object and behave like global variables. Class variables are rarely used in Ruby programs.
+  - A class variable (declared within a class) name starts with two ''at'' signs (''@@'') followed by a name (@@sign, @@_, @@Counter). A class variable is shared among all obects of a class. Only one copy of a particular class variable exists for a given class. Class variables used at the top level are defined in Obect and behave like global variables. Class variables are rarely used in Ruby programs.
 
   - Global variables start with a dollar sign (''$'') followed by name characters. A global variable name can be formed using ''$-'' followed by any single character ($counter, $COUNTER, $-x). Ruby defines a number of global variables that include other punctuation characters, such as $_ and $-K.
 
-  -  variables in Ruby act as "references" to objects, which undergo automatic garbage collection.
+  -  variables in Ruby act as "references" to obects, which undergo automatic garbage collection.
 
 ## Scope
 
@@ -147,7 +147,7 @@
 
 - Class names and module names are constants and follow the constants naming schema
 
-- A Ruby constant is also a reference to an object.
+- A Ruby constant is also a reference to an obect.
 
 ### Method Names
 
@@ -155,14 +155,14 @@
 
 ### Basic Types
 
-- The basic types in Ruby are Numeric (subtypes include Fixnum, Integer, and Float), String, Array, Hash, Object, Symbol, Range, and RegExp.
+- The basic types in Ruby are Numeric (subtypes include Fixnum, Integer, and Float), String, Array, Hash, Obect, Symbol, Range, and RegExp.
 
--  Ruby, everything you manipulate is an object, and the results of those manipulations are themselves objects. There are no primitives or data-types.
+-  Ruby, everything you manipulate is an obect, and the results of those manipulations are themselves obects. There are no primitives or data-types.
 
 
 ### Methods
 
-- Every method needs an object.
+- Every method needs an obect.
 
 - We do not declare the return type; a method returns the value of the last statement executed in the method.
 
@@ -182,17 +182,17 @@
 
 -  the sequence in which the parameters are put on to the stack is Left to right like C
 
-- Are the parameters passed by value or reference? it is all references and not the objects themselves.
+- Are the parameters passed by value or reference? it is all references and not the obects themselves.
 
 ### Bang (!) Methods
 
-- Ruby methods that modify an object in-place and end in an exclamation mark are known as bang methods.
+- Ruby methods that modify an obect in-place and end in an exclamation mark are known as bang methods.
 
 - You'll find a number of pairs of methods, one with the bang and one without.
 
-  -  Those without the bang perform an action and return a freshly minted object
+  -  Those without the bang perform an action and return a freshly minted obect
 
-  -  The bang versions of the same methods perform the action, but they do so in place: Instead of creating a new object, they transform the original object.
+  -  The bang versions of the same methods perform the action, but they do so in place: Instead of creating a new obect, they transform the original obect.
 
   - Examples of such pairs of methods include sort/sort! for arrays, upcase/upcase! for strings, chomp/chomp! for strings, and reverse/reverse!
 
@@ -224,7 +224,7 @@
 
   -  ri will display documentation for you.
 
-  - You may specify a method name without a qualifying class or module name, but this will just show you a list of all methods by that name (unless the method is unique).
+  - You may specify a method name without a qualifying class or module name, but this will ust show you a list of all methods by that name (unless the method is unique).
 
 - ri dovetails with RDoc: It gives you a way to view the information that RDoc has extracted and organized.
 
@@ -234,10 +234,10 @@
 
 - Double quite String literals: substitutions, sequences that start with a backslash, and replace with some binary value. Followed by expression interpoilation. 
 
-- It is to be noted that every time a string literal is used in an assignment or as a parameter, a new String object is created.
+- It is to be noted that every time a string literal is used in an assignment or as a parameter, a new String obect is created.
 
 
-- String.methods.sort = shows you a list of methods that the Class object String responds to.
+- String.methods.sort = shows you a list of methods that the Class obect String responds to.
 
 - String.instance_methods.sort = This method tells you all the instance methods that instances of String are endowed with.
 
@@ -257,17 +257,17 @@
 
   - "(condition) ? (result if condition is true) : (result if condition is false)"
 
-- statement modifiers are a useful shortcut if the body of an if or unless statement is just a single expression. 
+- statement modifiers are a useful shortcut if the body of an if or unless statement is ust a single expression. 
 
   - "puts "Enrollments will now Stop" if participants > 2500"
 
 - case returns the value of the last expression executed.
 
-- nil is an Object
+- nil is an Obect
 
-   - You can call methods on nil, just like any other object.
+   - You can call methods on nil, ust like any other obect.
 
-   - You can add methods to nil, just like any other object.
+   - You can add methods to nil, ust like any other obect.
 
    -  nil and false evaluate to false, everything else (including true, 0) means true.
 
@@ -277,7 +277,7 @@
 
 - chunks of code between braces or between do..end that you can associate with method invocations
 
-- and may appear only in the source adjacent to a method call
+- and may appear only in the source adacent to a method call
 
 - the block is written starting on the same line as the method call's last parameter (or the closing parenthesis of the parameter list)
 
@@ -302,9 +302,9 @@
 
 #@ Arrays
 
-- An Array is just a list of items in order
+- An Array is ust a list of items in order
 
-- Every slot in the list acts like a variable, ... and you can make it point to a different object.
+- Every slot in the list acts like a variable, ... and you can make it point to a different obect.
 
 - You can make an array by using square brackets
 
@@ -326,11 +326,156 @@
 
   - Each internal option is passed to GetoptLong as an array,
 
+## Symbols
 
+- A symbol looks like a variable name but it's prefixed with a colon
+
+- You don't have to pre-declare a symbol
+
+- they are guaranteed to be unique
+
+- A Symbol is the most basic Ruby obect you can create, It's ust a name and an internal ID
+
+- Symbols are useful because a given symbol name refers to the same obect throughout a Ruby program
+
+- Symbols are more efficient than strings. Two strings with the same contents are two different obects, but for any given name there is only one Symbol obect
+
+- Symbols don't contain values or obects; they are used as a consistent name within code.
+
+- symbols are single reference values that are only initialized once
+
+- Symbols are particularly useful when creating hashes and you want to have a distinction between keys and values
+
+## Hashes
+
+- sometimes known as associative arrays, maps, or dictionaries
+
+- similar to arrays in that they are indexed collection of obect references
+
+- index arrays with integers, you can index a hash with obects of any types: strings, regular expressions, and so on
+
+- two obects - the index (normally called the key) and the value
+
+- retrieve the value by indexing the hash with the same key
+
+- values in a hash can be obects of any type
+
+- they can use any obect as an index.
+
+- Hashes have a default value. This value is returned when an attempting to access keys that do not exist: the value is nil.
+
+## File Read/Write
+
+- File.open method can open the file in different modes: r, r+, w
+
+- File modes can work like: <file mode><:external encoding><:internal>  
+
+  - "...File.open('p014constructs.rb', 'r:UTF-16LE:UTF-8') do |f1|  ..."
+
+- File.open opens a new File if there is no associated block.
+
+- optional block is given, it will be an argument, and the file is closed when the block terminates.
+
+  - Always close a file that you open. In the case of a file open for writing, this is very important and can actually prevent lost data.
+
+- Both class methods open and readlines belong to the IO class, whose sub-class is File.
+
+- The Find module supports top-down traversal of a set of file paths
+
+- Ruby supports the notion of a file pointer.
+
+- indicates the current location in the file
+
+## Obect Serialization
+
+- Obect serialization in Ruby is called marshaling.
+
+- Saving an obect and some or all of its components is done using the method Marshal.dump.
+
+- reconstitute the obect using Marshal.load
+
+- Ruby uses marshaling to store session data
+
+## RegEx In Rbuy
+
+- regular expression is simply a way of specifying a pattern of characters to be matched in a string
+
+- /pattern/
+
+- In Ruby regular expressions are obects (of type Regexp)
+
+- // is a regular expression and an instance of the Regexp class. Exp "//.class    # Regexp  "
+
+- The forward slashes delimit the pattern, which consists of the two things we are matching, separated by a pipe character (|).
+
+## Classes and Obects
+
+- Things an obect can do are called methods
+
+- An obect is a combination of state and methods that use the state.
+
+- class (blueprint) -> obect (created)
+
+- The construction is done via the new class method, the initialization is done via the initialize instance method. initialize is not a constructor!
+
+- The method new is used to create an obect
+
+- obects are pointed to, vars DO NOT hold the obect itself
+
+- methods are caled via a dot (.) syntax. dog.bark
+
+- parenths are options for method calls: dog.bark 'loud' === dog.bark('loud')
+
+- Every obect is "born" with certain innate abilities.
+
+  - puts d.methods.sort
+
+  - Amongst these many methods, the methods obect_id and respond_to? are important.
+
+- Every obect in Ruby has a unique id number associated with it. "puts "The id of d is #{d.obect_id}."
+
+- Literal constructors create obects when the subect is used: String, Symbol, Array, Hash, and Range.
+
+  - Observe that there is no visible call to new.
+
+- Class Methods (not obect methods)
+
+  - you send a message to the obect that is the class
+
+  - Some operations pertaining to a class can't be performed by individual instances of that class (new is an excellent example)
+
+  - Dog#bark - the instance method bark in the class Dog
+
+  - Dog.color - the class method color, in the class Dog
+
+  - Dog::color - another way to refer to the class method color
+
+```
+In writing about Ruby, the pound notation (#) is sometimes used to indicate an instance method - for example, we say File.chmod to denote the class method chmod of class File, and File#chmod to denote the instance method that has the same name. This notation is not part of Ruby syntax.
+```
+## Missing Methods
+
+- "def method_missing(m, \*args, &block)"
+
+- You are also responsible for maintaining the method_missing signature.
+
+- Is it possible to have a hook that captures only a missing method's name while ignoring its arguments and associated block.
+
+## Ruby Procs
+
+
+
+## Garbage Collection
+
+- The Ruby obect heap allocates a minimum of 8 megabytes.
+
+- Ruby's GC is called mark-and-sweep.
+
+- Ruby uses a conservative mark-and-sweep GC mechanism
 
 
 ## Dependency Management
 
 - require gives you access to the many extensions and programming libraries bundled with the Ruby programming language-as well as an even larger number of extensions and libraries written independently by other programmers and made available for use with Ruby.
 
-http://rubylearning.com/satishtalim/ruby_ranges.html
+- 
