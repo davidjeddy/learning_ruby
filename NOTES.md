@@ -1,5 +1,15 @@
 # Notes
 
+## Testing
+
+- The author of Test::Unit, Nathaniel Talbott, suggests starting the names of test cases with tc_ and the names of test suites with ts_
+
+- It's possible to run just one (or more) tests out of a full test case: $ruby -w tc_simple_number2.rb --name test_typecheck 
+
+- It is also possible to run all tests whose names match a given pattern: ruby -w tc_simple_number2.rb --name /test_type.\*/ 
+
+- Test::Unit provides the setup and teardown member functions
+
 ## Basic Info
 
 - Yukihiro Matsumoto, commonly known as 'Matz' created the Ruby language in 1993
