@@ -659,7 +659,13 @@ In writing about Ruby, the pound notation (#) is sometimes used to indicate an i
 
 - Time for most everyday programs.
 
+## Duck Typing
 
+- an object type is defined by what it can do, not by what it is
+
+- tendency of Ruby to be less concerned with the class of an object and more concerned with what methods can be called on it and what operations can be performed on it
+
+- If an object walks like a duck and talks like a duck, then the Ruby interpreter is happy to treat it as if it were a duck.
 
 ## Dependency Management
 
