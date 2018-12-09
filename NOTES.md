@@ -484,6 +484,12 @@ In writing about Ruby, the pound notation (#) is sometimes used to indicate an i
 
   - **Since instance variables have nothing to do with inheritance, it follows that an instance variable used by a subclass cannot "shadow" an instance variable in the super-class. If a subclass uses an instance variable with the same name as a variable used by one of its ancestors, it will overwrite the value of its ancestor's variable.**
 
+## Abstract class
+
+- an abstract class that invokes certain undefined "abstract" methods
+
+- left for subclasses to define
+
 ## Method Overriding
 
 - When you invoke super with no arguments Ruby sends a message to the parent of the current object, asking it to invoke a method of the same name
@@ -491,6 +497,12 @@ In writing about Ruby, the pound notation (#) is sometimes used to indicate an i
 - Called with an empty argument list sends no arguments to the higher-up method
 
 - Called with specific arguments - "super(a, b, c)" - it sends exactly those arguments.
+
+## Method OVerload
+
+- Is NOT supported, use \*arg method argument and branching if/else logic
+
+* I am not a fan of this, smells of bad s/w design.
 
 ## Redefine Method
 
