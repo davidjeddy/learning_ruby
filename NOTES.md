@@ -692,7 +692,39 @@ you're allowed to do this:
     nd.name = 'Benzy'  
 ```
 
+## Mutable and Immutable Objects
 
+- Mutable objects are objects whose state can change.
+
+- Immutable objects are objects whose state never changes after creation.
+
+- Mutability is a property of an instance, not of an entire class.
+
+- Any instance can become immutable by calling freeze.
+
+- The freeze method in class Object prevents you from changing an object, effectively turning an object into a constant.
+
+- an attempt to modify it results in TypeError
+
+- freeze operates on an object reference, not on a variable (ny operation resulting in a new object will work)
+
+-  method frozen? tells you whether an object is frozen or not
+
+- Ruby sometimes copies objects and freezes the copies
+
+- a string as a hash key, Ruby actually copies the string, freezes the copy, and uses the copy as the hash key; the original string changes later on, the hash key isn't affected.
+
+- internal file operations work from a frozen copy of a filename instead of using the filename directly
+
+- this copy-and-freeze pattern in multi-threaded code to prevent a data structure you're working on from being changed by another thread
+
+## Marshaling (object serialization)
+
+- Marshal only serializes data structure
+
+- can't serialize Ruby code (like Proc objects) nor file handles or database connections
+
+- 
 
 ## Dependency Management
 
