@@ -408,7 +408,7 @@
 
 - The forward slashes delimit the pattern, which consists of the two things we are matching, separated by a pipe character (|).
 
-## Classes and Obects
+## Classes and Objects
 
 - Things an obect can do are called methods
 
@@ -453,6 +453,13 @@
 ```
 In writing about Ruby, the pound notation (#) is sometimes used to indicate an instance method - for example, we say File.chmod to denote the class method chmod of class File, and File#chmod to denote the instance method that has the same name. This notation is not part of Ruby syntax.
 ```
+
+- classes are never closed: you can always add methods to an existing class
+
+- note that self.class refers to Object and self refers to an object called main of class Object.
+
+- Add methods that conceptually belong to a class, in the class. If the methods is generally useful, make a sub-class. Finally, one off or no-often used logic cna be closures or lambdas.
+
 ## Missing Methods
 
 - "def method_missing(m, \*args, &block)"
