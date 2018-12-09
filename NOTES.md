@@ -746,6 +746,22 @@ you're allowed to do this:
 
 - Class names tend to be nouns, while module names are often adjectives.
 
+## SELF
+
+- one and only one self: the current or default object accessible to you in your program
+
+- Top level self is main Objects
+
+- Method declarations re-assign self to method
+
+- Var declaration reassignes SELF to var
+
+- Self can be inside module definition, instance method definitions, and singleton-method / class-method definitions
+
+- Class methods are defined as singleton methods for class object
+
+- self as a singleton method is the object whose singleton method it is.
+
 ## Dependency Management
 
 - require gives you access to the many extensions and programming libraries bundled with the Ruby programming language-as well as an even larger number of extensions and libraries written independently by other programmers and made available for use with Ruby.
