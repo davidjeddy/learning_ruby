@@ -463,7 +463,17 @@ In writing about Ruby, the pound notation (#) is sometimes used to indicate an i
 
 ## Ruby Procs
 
+- Blocks are not objects
 
+  - but they can be converted into objects of class Proc
+
+  - calling the lambda method of the class Object
+
+  - block created with lambda acts like a Ruby method
+
+- you cannot pass methods into other methods (but you can pass procs into methods)
+
+- methods cannot return other methods (but they can return procs).
 
 ## Garbage Collection
 
@@ -472,7 +482,6 @@ In writing about Ruby, the pound notation (#) is sometimes used to indicate an i
 - Ruby's GC is called mark-and-sweep.
 
 - Ruby uses a conservative mark-and-sweep GC mechanism
-
 
 ## Dependency Management
 
