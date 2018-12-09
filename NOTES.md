@@ -667,6 +667,33 @@ In writing about Ruby, the pound notation (#) is sometimes used to indicate an i
 
 - If an object walks like a duck and talks like a duck, then the Ruby interpreter is happy to treat it as if it were a duck.
 
+## Syntax Sugar:
+
+- Ruby gives you some syntactic sugar for calling setter methods. Instead of this:
+
+Short hand setter's:
+```
+...
+  # setter method
+  def name=(nm)
+    @name = nm
+  end
+...
+```
+Thwn instead of doing this:
+
+```
+    nd.name=('Benzy')  
+```
+
+you're allowed to do this:
+
+```
+    nd.name = 'Benzy'  
+```
+
+
+
 ## Dependency Management
 
 - require gives you access to the many extensions and programming libraries bundled with the Ruby programming language-as well as an even larger number of extensions and libraries written independently by other programmers and made available for use with Ruby.
