@@ -504,6 +504,42 @@ In writing about Ruby, the pound notation (#) is sometimes used to indicate an i
 
 * I am not a fan of this, smells of bad s/w design.
 
+## Method Access Control
+
+- The only easy way to change an object's state in Ruby is by calling one of its methods
+
+- Control access to the methods, and you have controlled access to the object
+
+- A good rule of the thumb is never to expose methods that could leave an object in an invalid state.
+
+- Ruby gives you three levels of protection:
+
+  - Public methods can be called by everyone - no access control is enforced. A class's instance methods (these do not belong only to one object; instead, every instance of the class can call them) are public by default; anyone can call them. The initialize method is always private.
+
+  - Protected methods can be invoked only by objects of the defining class and its subclasses. Access is kept within the family. However, usage of protected is limited.
+
+  - Private methods cannot be called with an explicit receiver - the receiver is always self. This means that private methods can be called only in the context of the current object; you cannot invoke another object's private methods.
+
+- public, private and protected apply only to methods
+
+- Instance and class variables are encapsulated and effectively private, and constants are effectively public.
+
+- subclasses can invoke them and can override private methods as they are inherated
+
+## Accessor Methods
+
+- Encapsulation is achieved when the instance variables are private to an object and you have public getters and setters 
+
+- Ruby call them attribute readers and attribute writers
+
+- To make instance variables accessible; Ruby provides accessor methods that return their values
+
+## Object Instance Variables
+
+- All Ruby objects have a set of instance variables. These are not defined by the object's class - they are simply created when a value is assigned to them.
+
+- Because instance variables are not defined by a class, they are unrelated to subclassing and the inheritance mechanism.
+
 ## Redefine Method
 
 - Nothing stops you from defining a method twice.
