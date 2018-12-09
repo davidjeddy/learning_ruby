@@ -9,3 +9,6 @@
 - [http://rubylearning.com/](http://rubylearning.com/)
 
 - [http://ruby-doc.org/](http://ruby-doc.org/)
+
+- [https://en.wikibooks.org/wiki/Ruby_Programming/Unit_testing](https://en.wikibooks.org/wiki/Ruby_Programming/Unit_testing)
+
