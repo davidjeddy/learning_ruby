@@ -12,3 +12,4 @@
 
 - [https://en.wikibooks.org/wiki/Ruby_Programming/Unit_testing](https://en.wikibooks.org/wiki/Ruby_Programming/Unit_testing)
 
+- [https://blog.appsignal.com/2016/11/23/ruby-magic-building-a-30-line-http-server-in-ruby.html](https://blog.appsignal.com/2016/11/23/ruby-magic-building-a-30-line-http-server-in-ruby.html)
