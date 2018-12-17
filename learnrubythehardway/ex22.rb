@@ -1,0 +1,1 @@
+puts "Strings, vars, read/write files, and functions I all understand very well."
