@@ -36,8 +36,8 @@ class TestGame < Test::Unit::TestCase
     west.add_paths({'east' => start})
     down.add_paths({'up' => start})
 
-    assert_queal(west, start.go('west'))
-    assert_queal(start, start.go('west').go('east'))
-    assert_queal(start, start.go('down').go('up'))
+    assert_equal(west, start.go('west'))
+    assert_equal(start, start.go('west').go('east'))
+    assert_equal(start, start.go('down').go('up'))
   end
 end
